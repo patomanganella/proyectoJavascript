@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.bg-nav{
+    /* border: solid 3px black; */
+    background-color: #143D74;
+      
+}
+
+#navbarNav{
+    /* border: solid 5px  green; */
+    list-style-type: none;
+    display: flex;
+    justify-content: center;   
+    
+}
+
+.navbar-nav{
+    gap: 50px;
+    align-items: center;
+    
+}
+
+.nav-item a{
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-item a:hover{
+  color: white;
+    background-color: black;
+    border-radius: 50px;
+    transition: all 0.3s;
+   
+}
+    
+
+.dropdown-menu a{
+    background-color: #143D74;
+}
+
+.dropdown-item{
+
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo-img-4{
+    width: 150px;
+    height: 150px;
+ 
+}
+
+.btn-header{
+    background-color: #143D74;
+    border: none;
+ 
+   
+}
+
+ 
+.tradingview-widget-copyright {
+    font-size: 13px ;
+    line-height: 32px ;
+    text-align: center ;
+    vertical-align: middle ;
+    /* @mixin sf-pro-display-font; */
+    font-family: 'Times New Roman', Times, serif;
+    color: #9db2bd ;
+}
+
+.tradingview-widget-copyright .blue-text {
+    color: #2962FF;
+}
+
+.tradingview-widget-copyright a {
+    text-decoration: none nt;
+    color: #9db2bd;
+}
+
+.tradingview-widget-copyright a:visited {
+    color: #9db2bd ;
+}
+
+.tradingview-widget-copyright a:hover .blue-text {
+    color: #1E53E5 ;
+}
+
+.tradingview-widget-copyright a:active .blue-text {
+    color: #1848CC ;
+}
+
+.tradingview-widget-copyright a:visited .blue-text {
+    color: #2962FF;
+}
+
+.home-bienvenida{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.h1-home-bienvenida{
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: white 3px solid;
+
+}
+
+.h1-home-bienvenida:hover{
+
+    border-bottom: black 3px solid;
+    color: white;
+
+  
+}
+/* .h1-home-bienvenida:hover{
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom:red 3px solid; */
+
+.bg-bienvenida{
+
+    background-color: #143D74;
+}
+
+#inicio-datos{
+    padding-top: 50px;
+
+}
+
+.conteiner-servicios{
+
+    padding-top: 90px;
+    gap: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+      
+
+}
+
+.conteiner-servicios:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+
+ 
+      
+
+}
