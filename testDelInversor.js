@@ -18,5 +18,24 @@ class ActivosFinancieros {
 }
 
 const activosFinancieros1 = new ActivosFinancieros ("Plazos Fijos","cualquiera",perfil1);
+const activosFinancieros2 = new ActivosFinancieros ("Fondos Comunes de Inversión","Mercado de Valores",perfil1);
+const activosFinancieros3 = new ActivosFinancieros ("Compra de USD","Mercado Cambiario",perfil1);
+const activosFinancieros4 = new ActivosFinancieros ("Fondos Comunes de Inversión de renta mixta","Mercado de Valores",perfil2);
+const activosFinancieros5 = new ActivosFinancieros ("Materias primas","Mercado de Valores o Mercado de Futuros",perfil2);
+const activosFinancieros6 = new ActivosFinancieros ("Bajo porcentaje de acciones Argentinas","Bolsa de valores Argentina - Merval",perfil2);
+const activosFinancieros7 = new ActivosFinancieros ("Acciones Argentinas","Bolsa de valores Argentina - Merval",perfil3);
+const activosFinancieros8 = new ActivosFinancieros ("Cedears","Bolsa de valores Argentina - Merval",perfil3);
+const activosFinancieros9 = new ActivosFinancieros ("Bitcoin, Ethereum, Altcoins","Mercado de Criptomonedas",perfil3);
+
+/* Console.log - prueba
 console.log(activosFinancieros1);
 activosFinancieros1.mostrarActivosFinacieros(); 
+activosFinancieros2.mostrarActivosFinacieros(); 
+activosFinancieros3.mostrarActivosFinacieros(); 
+activosFinancieros4.mostrarActivosFinacieros(); 
+activosFinancieros5.mostrarActivosFinacieros(); 
+activosFinancieros6.mostrarActivosFinacieros();
+activosFinancieros7.mostrarActivosFinacieros(); 
+activosFinancieros8.mostrarActivosFinacieros(); 
+activosFinancieros9.mostrarActivosFinacieros();  
+*/
