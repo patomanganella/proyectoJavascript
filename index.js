@@ -51,6 +51,7 @@ const nuestrosActivos = [activosFinancieros1,activosFinancieros2,activosFinancie
 
 //console.log(nuestrosActivos);
 
+//Informacion al usuario sobre los activos - Porximamente cards con una breve explicacion de cada uno
 let opcionActivos ="Sobre que activo te gustaria conocer más? - Escribí el activo"
 
 for ( activo of nuestrosActivos){
