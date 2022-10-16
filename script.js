@@ -70,3 +70,4 @@ else{
 const mostrarActivos = (activos) => "Los activos que se ajustan a tu perfil son: "+activos;
 console.log(mostrarActivos("\n - Plazos fijos" +"\n - FCI"+"\n - Cauciones"+"\n - Compra de USD"));
 */
+
