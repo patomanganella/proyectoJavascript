@@ -142,12 +142,17 @@ font-family: Georgia, 'Times New Roman', Times, serif;
       
 
 }
-
-.conteiner-servicios:hover{
-    transform: scale(1.1);
-    transition: all 2s;
-
- 
+@media only screen and (max-width: 468px) {
+    .conteiner-servicios {
+      display: flex;
+      flex-wrap: wrap;
       
-
+    }
+    .conteiner-servicios:hover {
+      transform: scale(1) translate(0px, 0px);
+      transition: none;
+    }
 }
+
+
+
