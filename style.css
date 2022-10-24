@@ -156,3 +156,49 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 
 
+#cards{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 50px;
+    justify-content: center;
+       
+}
+
+.bg-activos{
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: white 3px solid;
+    
+}
+
+.bg-activos:hover{
+
+    border-bottom: black 3px solid;
+    color: white;
+
+  
+}
+
+.section-servicios{
+    padding-top: 20px;
+}
+
+.home-activos{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #143D74;
+}
+
+#activos{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 100px;
+    justify-content: center;
+
+
+
+    
+       
+}
