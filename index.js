@@ -119,6 +119,7 @@ function agregarAlCarrito(servicioAAgregar){
   carrito.push(servicioAAgregar);
   console.table(carrito)
   alert("Servicio agregado al carro con éxito!!");
+  document.ele
 }
 
 
