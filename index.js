@@ -60,12 +60,12 @@ const servicios = [
     {
       id:1,
       servicio:"Test del Inversor",
-      precio:"Gratuito"
+      precio:0
     },
     {
       id:2,
       servicio:"Apertura de cuenta en Broker Nacional",
-      precio:"Gratuito"
+      precio:0
   
     },
     {
@@ -119,10 +119,16 @@ function agregarAlCarrito(servicioAAgregar){
   carrito.push(servicioAAgregar);
   console.table(carrito)
   alert("Servicio agregado al carro con éxito!!");
-  document.ele
+  document.getElementById("tablabody").innerHTML +=`
+      <tr>
+        <td>${servicioAAgregar.id}</td>
+        <td>${servicioAAgregar.servicio}</td>
+        <td>${servicioAAgregar.precio}</td>
+  `;
+
+  let totalCarrito = carrito.reduce((acumulador,serv)=>acumulador+serv.precio,0);
+  document.getElementById("total").innerText="total a pagar $: "+totalCarrito;
 }
-
-
 
 
 
