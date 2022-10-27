@@ -118,7 +118,16 @@ servicios.forEach((servicio)=>{
 function agregarAlCarrito(servicioAAgregar){
   carrito.push(servicioAAgregar);
   console.table(carrito)
-  alert("Servicio agregado al carro con éxito!!");
+  //alert("Servicio agregado al carro con éxito!!");
+   //Sweet alert
+   Swal.fire({
+    title:servicioAAgregar.servicio,
+    text: 'Se agrego al carrito correctamente!!',
+    // background:"blue",
+    // color:"red",
+    // backdrop:"red",
+
+   })
   document.getElementById("tablabody").innerHTML +=`
       <tr>
         <td>${servicioAAgregar.id}</td>

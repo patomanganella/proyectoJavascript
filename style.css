@@ -265,15 +265,16 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     width: 70%;
 }
 
+/*
 #btn1:hover{
-    background-color:  olivedrab;
+    background-color:  olivedrab; 
     color: black;
     cursor: pointer;
     transform: scale(1.05);
     width: 8% ;
 }
 #btn2:hover{
-    background-color: olivedrab;
+ background-color: olivedrab;
     color: black;
     cursor: pointer;
     transform: scale(1.05);
@@ -292,4 +293,5 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
     transform: scale(1.05);
     width: 8% ;
-}
+} 
+  */
