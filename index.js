@@ -179,6 +179,8 @@ for(const activo of nuestrosActivos){
 }
 
 
+
+
 //Informacion al usuario sobre los activos - Porximamente cards con una breve explicacion de cada uno - tocar el boton y que gire la carta
 
 
