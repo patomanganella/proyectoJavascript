@@ -3,7 +3,8 @@ let perfil2 = "Moderado";
 let perfil3 = "Agresivo";
 
 const conocerActivos = [];
-const carrito =[]
+let carrito =[]
+let btnFin = document.getElementById("finalizar");
 
 //Creacion de Objetos mediante CLASS
 
@@ -137,6 +138,28 @@ function agregarAlCarrito(servicioAAgregar){
 
   let totalCarrito = carrito.reduce((acumulador,serv)=>acumulador+serv.precio,0);
   document.getElementById("total").innerText="total a pagar $: "+totalCarrito;
+
+  }
+
+  btnFin.onclick = () => {
+    carrito=[];
+    document.getElementById("tablabody").innerHTML="";
+    document.getElementById("total").innerText = "Total a pagar $: ";
+    //Remover la clave del carrito en el STORAGE
+
+   //Toast
+   Toastify({
+    text: "Nos contactaremos en un plazo de 24hs para coordinar los servicios contratados",        
+    duration: 4000,
+    gravity: 'top',
+    position: 'center',
+    //style: {
+      // background: 'linear-gradient(to right, #00b09b, #96c92d)',
+    //},
+    //destination: 'https://www.coderhouse.com'
+   
+   }).showToast();
+  
 }
 
 
