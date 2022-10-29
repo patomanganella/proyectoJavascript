@@ -10,7 +10,7 @@ $dirección = $_POST ['dirección'];
 $ciudad = $_POST ['ciudad'];
 $mensaje = $_POST ['textarea'];
 $destinatario = 'patriciomanganella@gmail.com';
-$header = 'Este mail fue enviado desde la web DanMar';
+$header = 'Este mail fue enviado desde la web Inversores Comunes';
 
 $mensajeCompleto = $mensaje . "\nNombre: " . $nombre . "\nApellido: " . $apellido . "\nCorreo: " . $mail . "\nDirección: " . $dirección . "\nCiudad: " . $ciudad;
 
