@@ -299,4 +299,32 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
+.contenedor-img-servicios{
+    padding-top: 30px ;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    
+    /* border: solid 3px red; */
+}
+.contenedor-img-servicios a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+    
+   
+}
 
+.contenedor-img-servicios img{
+    width: 100px;
+    height: 150px;
+   
+}
+
+.p-index:hover a{
+    color: white;
+    background-color:#143D74;
+    
+   
+}

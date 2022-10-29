@@ -11,16 +11,23 @@ function entrar (){
   if((usu == "pato@mail.com" && nomUsu == "Patricio") || (usu == "griselda@mail.com" && nomUsu == "Griselda")){
     Swal.fire({
       icon: 'success',
-      title: 'Yess!!...',
-      text: 'Usuario '+nomUsu + " "+ "registado con éxito!" + "Bienvenido!!!",
-      footer: '<a href="">Why do I have this issue?</a>'
+      title: 'Excelente!!!',
+      text: 'Usuario '+nomUsu + " "+ "registado con éxito!" + " Bienvenido!!!",
+      
     })
-    // alert("Usuario "+nomUsu + " "+ "registrado con éxito!");
-    localStorage.setItem(usu,nomUsu);
+    
+    localStorage.setItem("usuario","pato@mail.com");
+    localStorage.setItem("usuario2","griselda@mail.com");
 
+    let usuarioSesion = localStorage.getItem("usuario");
+    let usuarioSesion2 = localStorage.getItem("usuario2");
+    console.log(usuarioSesion);
+    console.log(usuarioSesion2);
+    
+    
     
    
-console.log(usuNom);
+
   }else{
      Swal.fire({
      icon: 'error',
@@ -38,6 +45,7 @@ const boton =document.getElementById("butonUsu").addEventListener("click",functi
 
 
 });
+
 
 
 /*
