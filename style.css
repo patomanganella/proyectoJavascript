@@ -328,3 +328,73 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     
    
 }
+
+
+.btn-forms {
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+}   
+
+.btn-forms:hover{
+    background-color:#143D74;
+    color: white;
+}
+
+
+
+  .te-esperamos{
+    padding: 2%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; ;
+    
+
+  }
+
+
+  .ratio{
+    margin: auto;    
+    width: 80%;
+    
+  }
+
+.asunto{
+  display: flex;
+  justify-content: center ;
+
+}
+
+.datos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-top: 50px;
+
+}
+ 
+.comentarios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+
+}
+
+.enviar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+
+}
+ 
+.contacto-bg{
+    padding-top: 15px;
+    padding-bottom: 15px;
+   background-color: #143D74;
+}
+
