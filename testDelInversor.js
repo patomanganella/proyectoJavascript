@@ -22,13 +22,7 @@ function entrar (){
     let usuarioSesion = localStorage.getItem("usuario");
     let usuarioSesion2 = localStorage.getItem("usuario2");
     console.log(usuarioSesion);
-    console.log(usuarioSesion2);
-    
-    
-    
-   
-
-  }else{
+    }else{
      Swal.fire({
      icon: 'error',
      title: 'Oops...',

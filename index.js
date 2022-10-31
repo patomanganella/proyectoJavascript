@@ -91,9 +91,6 @@ console.log(buscador);
 
 
 
-
-
-
 //DOM creando cartas en el index de los activos
 let articuloActivos = document.getElementById("activos");
 for(const activo of nuestrosActivos){
@@ -112,15 +109,4 @@ for(const activo of nuestrosActivos){
 
 
 //Informacion al usuario sobre los activos - Porximamente cards con una breve explicacion de cada uno - tocar el boton y que gire la carta
-
-
-
-
-
-
-// let opcionActivos ="Sobre que activo te gustaria conocer más? - Escribí el activo"
-
-// for ( activo of nuestrosActivos){
-//   opcionActivos += `\n ${activo.id} - ${activo.nombre}`
-// }
 
