@@ -22,7 +22,7 @@ class ActivosFinancieros {
 }
 
 
-const activosFinancieros1 = new ActivosFinancieros ("1","Plazos Fijos","cualquiera",perfil1);
+const activosFinancieros1 = new ActivosFinancieros ("1","Plazos Fijos","Metodo de Ahorro",perfil1);
 const activosFinancieros2 = new ActivosFinancieros ("2","Fondos Comunes de Inversión","Mercado de Valores",perfil1);
 const activosFinancieros3 = new ActivosFinancieros ("3","Compra de USD","Mercado Cambiario",perfil1);
 const activosFinancieros4 = new ActivosFinancieros ("4","Fondos Comunes de Inversión de renta mixta","Mercado de Valores",perfil2);
@@ -31,6 +31,12 @@ const activosFinancieros6 = new ActivosFinancieros ("6","Bajo porcentaje de acci
 const activosFinancieros7 = new ActivosFinancieros ("7","Acciones Argentinas","Bolsa de valores Argentina - Merval",perfil3);
 const activosFinancieros8 = new ActivosFinancieros ("8","Cedears","Bolsa de valores Argentina - Merval",perfil3);
 const activosFinancieros9 = new ActivosFinancieros ("9","Criptomonedas","Mercado de Criptomonedas",perfil3);
+
+console.log(ActivosFinancieros);
+
+
+
+console.log(ActivosFinancieros);
 
 
 
@@ -53,6 +59,10 @@ activosFinancieros9.mostrarActivosFinacieros();
 
 const nuestrosActivos = [activosFinancieros1,activosFinancieros2,activosFinancieros3,activosFinancieros4,activosFinancieros5,activosFinancieros6,activosFinancieros7,activosFinancieros8,activosFinancieros9];
 //console.log(nuestrosActivos);
+
+
+//Elimino OBJETO y aplico metodo SPLICE
+nuestrosActivos.splice(5,1);
 
 
 //Creación de Arrays
@@ -97,12 +107,16 @@ for(const activo of nuestrosActivos){
   let cartaActivo = document.createElement("div");
   cartaActivo.className="card col-3"
   cartaActivo.innerHTML = `
-  <div class="card-body">
+  <div class=""card border-dark mb-3" >
+  <div class="card-header">${activo.tipoDeMercado} </div>
+  <div class="card-body text-dark">
    <h5 class="card-title">${activo.nombre}</h5>
-       <a href="#" id="btn-activos" class="btn btn-primary">Conoce más</a>
+   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <a href="./pages/servicios.html" id="btn-activos" class="btn btn-primary">Conoce más</a>
   </div>
   `;
   articuloActivos.append(cartaActivo);
+
 }
 
 
