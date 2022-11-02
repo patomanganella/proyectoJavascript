@@ -4,11 +4,11 @@ let btnFin = document.getElementById("finalizar");
 //Creación de Arrays
 //BUSCADOR en la pagina de inicio
 const servicios = [
-  {
-    id:1,
-    servicio:"Test del Inversor",
-    precio:0
-  },
+  // {
+  //   id:1,
+  //   servicio:"Test del Inversor",
+  //   precio:0
+  // },
   {
     id:2,
     servicio:"Apertura de cuenta en Broker Nacional",

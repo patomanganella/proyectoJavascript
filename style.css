@@ -399,20 +399,21 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-/* cards giratorias del index
+
+ cards giratorias del index
 .section-prueba{
     padding-top: 20px;
 
 }
 
-.card{
+/* .card{
  
     width: 300px;
     height: 350px;
     
-}
-/*
-.card .face{
+} */
+
+/* #tarjeta-p{
     position: absolute; 
     width: 100%;
     height: 100%;
@@ -422,10 +423,10 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     transition: .5s;
 
     
-}
+} */
 
+/* 
 
-/*
 .card .front h4{
     width: 100%;
     height: 45px;
@@ -435,9 +436,9 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     background: #143D74;
     text-align: center;
     
-}
+} */
 
-.card .back{
+/* .card .back{
     transform: perspective(600px) rotateY(180deg);
     background:  #143D74;
     padding: 15px;
@@ -448,37 +449,32 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     box-shadow: 0 5px 10px black ;
 
-}
+} */
 
-.card .back .link{
+/* .card .back .link{
     border-top: solid 1px blue;
     height: 50px;
     line-height: 50px;
 
-}
+} */
 
-.card .back .link a{
+/* .card .back .link a{
  color:white;
  text-decoration: none;
 
-}
+} */
 
-.card .back h3{
+/* .card .back h3{
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 1.5px;
    
-}
+} */
 
-.card .back p{
+#tarjeta-p{
   
     letter-spacing: 0.5px;
    
 }
 
-.card:hover .back{
-    transform: perspective(600px) rotateY(360deg);
-    
- }
 
- */
