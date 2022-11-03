@@ -98,6 +98,7 @@ function verificarRespuestas(){
 
   return false
 }
+
 //'<h3> Obtuviste <span>'+ puntos + '</span> de <span>'+ total + " "+ 'puntos </span></h3>';
 //Swal.fire("Obtuviste " + puntos + " de " + total + " puntos ");
 
