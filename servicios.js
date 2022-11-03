@@ -36,7 +36,7 @@ for(const servicio of servicios){
   let carta = document.createElement("div");
   carta.className="card col-4"
   carta.innerHTML += `
-  <div class="card-body">
+  <div class="card-body ">
    <h5 class="card-title">${servicio.servicio}</h5>
    <p class="card-text">Precio: $ ${servicio.precio}.</p>
     <button id='btn${servicio.id}'class="btn btn-primary">Solicitar</button>

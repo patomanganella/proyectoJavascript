@@ -68,11 +68,11 @@ let perfil2 = "Moderado";
 let perfil3 = "Agresivo";
 
 function verificarRespuestas(){
-  let total = 2;
+  let total = 10;//Modificar segun las preguntas
   let puntos = 0;
   let miForm = document.forms["testForm"];
   
-  const respuestas = ["a","d"];
+  const respuestas = ["a","d","d","a","b","b","b","b","b","b"];
 
   for(let i = 1; i <= total; i++){
     if(miForm["p"+ i].value === null || miForm["p"+i].value === "" ){
@@ -88,12 +88,18 @@ function verificarRespuestas(){
   }
 
   let resultado = document.getElementById("resultado");
-  resultado.innerHTML = '<h3> Obtuviste <span>'+ puntos + '</span> de <span>'+ total + " "+ 'puntos </span></h3>';
+  resultado.innerHTML = 
+  Swal.fire({
+    icon: 'info',
+    title: 'Obtuviste:',
+    text:  puntos + " respuestas correctas " + " sobre " + total + " preguntas posibles ",
+    
+  })
 
   return false
 }
-
-
+//'<h3> Obtuviste <span>'+ puntos + '</span> de <span>'+ total + " "+ 'puntos </span></h3>';
+//Swal.fire("Obtuviste " + puntos + " de " + total + " puntos ");
 
 
 
