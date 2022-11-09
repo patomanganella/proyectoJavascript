@@ -389,11 +389,6 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     
   }
 
-.asunto{
-  display: flex;
-  justify-content: center ;
-
-}
 
 .datos{
   display: flex;
@@ -419,6 +414,11 @@ font-family: Georgia, 'Times New Roman', Times, serif;
   justify-content: center;
   gap: 20px;
   padding-top: 50px;
+  padding: 10px;
+  background:#1980b8;
+  border-radius: 15px;
+  color: white;
+
 
 }
  
@@ -428,7 +428,13 @@ font-family: Georgia, 'Times New Roman', Times, serif;
    background-color: #143D74;
 }
 
+.label{
+    color: white;
+}
 
+#warnings{
+    color: white ;
+}
 
  /* cards giratorias del index */
 .section-prueba{

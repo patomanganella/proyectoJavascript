@@ -60,30 +60,70 @@
   </div>
 
 
+  <form class="contacto-bg" action="" method="POST" id="form">
 
-  <form class="contacto-bg" action="https://formsubmit.co/patriciomanganella@hotmail.com" method="POST">
+    <div class="form">
+   <div class="datos">
+        <div class="grupo">
+          <label class="label" for="">Nombre</label>
+            <input type="text" class="form-control" name="" id="name" style="width: 300px" >
+            
+        </div>
+
+        <div class="grupo">
+          <label class="label" for="">Apellido</label>
+          <input type="text" class="form-control" name="" id="apellido"style="width: 300px" >
+          
+      </div>
+        <div class="grupo">
+          <label class="label" for="">Email</label>
+            <input type="email" class="form-control" name="" id="email" style="width: 300px" >
+            
+        </div>
+    
+        </div>
+
+        <div class="comentarios" > 
+          <div >
+            <textarea class="form-control" name='textarea' placeholder="Deje su comentario" id="comentario"  style="height: 150px" ></textarea>         
+          </div>
+
+
+        <div >
+          <div>
+        <button class="enviar" type="submit">Enviar Consulta</button>
+        <p id="warnings"></p>
+      </div>
+    </div>
+
+    </div>
+
+</form>
+
+ <!--
+  <form id="form" class="contacto-bg" action="https://formsubmit.co/patriciomanganella@hotmail.com" method="POST">
   
 
 <div>
     <div id="asunto" class="asunto" >
     
-      <input type="text" name='asunto' class="form-control" id="form-asunto" placeholder="Asunto (requerido)" style="width: 300px" required>
+      <input type="text" name='asunto' class="form-control" id="asunto" placeholder="Asunto (requerido)" style="width: 300px" >
     </div>
 </div>
 
 <div class="datos">
     <div >
     
-        <input type="text" name='nombre' class="form-control" id="form-nombre" placeholder="Nombre (requerido)" required>
+        <input type="text" name='nombre' class="form-control" id="nombre" placeholder="Nombre (requerido)" >
       </div>
       <div>
       
-          <input type="text" name='apellido'class="form-control" id="form-apellido" placeholder="Apellido (requerido)" required>
+          <input type="text" name='apellido'class="form-control" id="apellido" placeholder="Apellido (requerido)" >
         </div>
       
     <div>
     
-      <input type="email" name='correo'class="form-control" id="form-mail" placeholder="Email (requerido)" required>
+      <input type="email" name='correo'class="form-control" id="mail" placeholder="Email (requerido)">
     </div>
 
     <div >
@@ -100,15 +140,23 @@
 <div>
     <div class="comentarios" > 
       <div >
-        <textarea class="form-control" name='textarea' placeholder="Deje su comentario" id="form-comentarios"  style="height: 150px" required></textarea>         
+        <textarea class="form-control" name='textarea' placeholder="Deje su comentario" id="floatingTextarea2"  style="height: 150px" ></textarea>         
       </div>    
     </div>
 
 <div class="enviar">
    
      <div >
-      <button id="boton-contacto" type="submit" >Enviar consulta</button>
-  
+      <button type="submit">Enviar consulta</button>
+      <p id="warnings"></p>
+      <script>
+        let miBoton = document.getElementById("boton-contacto");
+        miBoton.onclick = () => { 
+          Swal.fire('Consulta enviada con exito!!')
+        
+          };
+          
+      </script>
     </div>
   
 </div>
@@ -121,7 +169,7 @@
   <input type="hidden" name="_captcha" value="false">
 
   
-  </form>
+  </form> -->
 
  </section>
 
@@ -165,8 +213,7 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- toastify -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <!-- <script src="../contacto.js"></script> -->
- 
+
   <script src="../contacto.js"></script>
   <script src="../ajax.js"></script>
 
