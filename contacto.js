@@ -32,13 +32,13 @@ form.addEventListener("submit", e=>{
         parrafo.innerHTML = warnings
         
     }else{
-        parrafo.innerHTML = warnings +  Swal.fire({
-            icon: 'success',
-            title: 'Excelente!!!',
-            text: "Consulta enviada con éxito"
-            
-          });
-          return false         
+        
+        Swal.fire(
+            'Excelente!!',
+            'Tu consulta fue enviada con éxito',
+            'success'
+          )
+          
     }
     
 })
