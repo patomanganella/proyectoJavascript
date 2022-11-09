@@ -37,25 +37,6 @@ console.log(ActivosFinancieros);
 
 
 
-console.log(ActivosFinancieros);
-
-
-
-/* Console.log - Aplico metodo del objeto
-
-console.log(activosFinancieros1);
-activosFinancieros1.mostrarActivosFinacieros(); 
-activosFinancieros2.mostrarActivosFinacieros(); 
-activosFinancieros3.mostrarActivosFinacieros(); 
-activosFinancieros4.mostrarActivosFinacieros(); 
-activosFinancieros5.mostrarActivosFinacieros(); 
-activosFinancieros6.mostrarActivosFinacieros();
-activosFinancieros7.mostrarActivosFinacieros(); 
-activosFinancieros8.mostrarActivosFinacieros(); 
-activosFinancieros9.mostrarActivosFinacieros();  
-*/
-
-
 //Creación de array de info al usuario
 
 const nuestrosActivos = [activosFinancieros1,activosFinancieros2,activosFinancieros3,activosFinancieros5,activosFinancieros7,activosFinancieros8,activosFinancieros9];
@@ -67,7 +48,6 @@ nuestrosActivos.splice(5,1);
 
 
 //Creación de Arrays
-//BUSCADOR en la pagina de inicio
 const servicios = [
     {
       id:1,
@@ -96,10 +76,6 @@ const servicios = [
   //console.log(servicios);
 
 
-//Aplicacion metodo Filter sobre Servicios - en un boton de busqueda proximamente
-const buscador = servicios.filter((a) => a.precio < 2000);
-console.log(buscador);
-
 
 
 //DOM creando cartas en el index de los activos
@@ -123,5 +99,4 @@ for(const activo of nuestrosActivos){
 
 
 
-//Informacion al usuario sobre los activos - Porximamente cards con una breve explicacion de cada uno - tocar el boton y que gire la carta
 

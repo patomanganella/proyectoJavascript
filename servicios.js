@@ -2,7 +2,6 @@ let carrito =[]
 let btnFin = document.getElementById("finalizar");
 
 //Creación de Arrays
-//BUSCADOR en la pagina de inicio
 const servicios = [
   // {
   //   id:1,
@@ -55,18 +54,15 @@ servicios.forEach((servicio)=>{
 })
 
 
-
+//Funcion agregar al carro
 function agregarAlCarrito(servicioAAgregar){
   carrito.push(servicioAAgregar);
   console.table(carrito)
-  //alert("Servicio agregado al carro con éxito!!");
-   //Sweet alert
+ 
    Swal.fire({
     title:servicioAAgregar.servicio,
     text: 'Se agrego al carrito correctamente!!',
-    // background:"blue",
-    // color:"red",
-    // backdrop:"red",
+ 
 
    })
   document.getElementById("tablabody").innerHTML +=`
@@ -85,7 +81,7 @@ function agregarAlCarrito(servicioAAgregar){
     carrito=[];
     document.getElementById("tablabody").innerHTML="";
     document.getElementById("total").innerText = "Total a pagar $: ";
-    //Remover la clave del carrito en el STORAGE
+
 
    //Toast
    Toastify({
@@ -93,10 +89,7 @@ function agregarAlCarrito(servicioAAgregar){
     duration: 4000,
     gravity: 'top',
     position: 'center',
-    //style: {
-      // background: 'linear-gradient(to right, #00b09b, #96c92d)',
-    //},
-    //destination: 'https://www.coderhouse.com'
+
    
    }).showToast();
   

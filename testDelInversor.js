@@ -1,7 +1,7 @@
 let btnFin = document.getElementById("input-submit");
 
 //Aplicación de STORAGE Y JSON
-
+//Funcion entrar por medio del login
 function entrar (){
   const usu = document.getElementById("mailUsuario").value;
   const nomUsu = document.getElementById("nombreUsuario").value;
@@ -33,34 +33,12 @@ function entrar (){
 
 }
 
-
+//Evento Boton de ingreso
 const boton =document.getElementById("butonUsu").addEventListener("click",function(){
   entrar()
 
 
 });
-
-
-
-/*
-
-
-//Aplicacion de ciclo Usuario y contraseña con ciclo FOR
-for(let i=1;i<=3;i++){
-    let entrada= prompt("Bienvenido Inversor :)"+"\nCreá tu Usuario para empezar");
-    let contrasenia=prompt("Crea una contraseña para "+entrada);
-    
-    if((entrada!="")&&(contrasenia!="")){
-        alert("Excelente!! "+"\nUsuario Creado" +"\nBienvenido a la web de Finanzas by Patricio Manganella!");
-        break;
-    }else{
-        alert("Usuario y/o contraseña erroneos! Restan "+(3-i)+" intentos");
-    
-    }
-    }
-//console.log(usuarios);
-
-*/
 
 //variables creadas
 let perfil1 = "Conservador";
@@ -68,7 +46,7 @@ let perfil2 = "Moderado";
 let perfil3 = "Agresivo";
 
 function verificarRespuestas(){
-  let total = 10;//Modificar segun las preguntas
+  let total = 10;
   let puntos = 0;
   let miForm = document.forms["testForm"];
   
@@ -99,10 +77,6 @@ function verificarRespuestas(){
   return false
 }
 
-//'<h3> Obtuviste <span>'+ puntos + '</span> de <span>'+ total + " "+ 'puntos </span></h3>';
-//Swal.fire("Obtuviste " + puntos + " de " + total + " puntos ");
-
-
 
 btnFin.onclick = () => {
   
@@ -115,13 +89,9 @@ btnFin.onclick = () => {
    style: {
       background: 'linear-gradient(to right, #00b09b, #96c92d)',
    },
-   //destination: 'https://www.coderhouse.com'
+
   
   }).showToast();
 }
 
-
-
-
-//*************************************************************** */
 
