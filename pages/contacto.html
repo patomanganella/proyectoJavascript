@@ -67,23 +67,23 @@
 <div>
     <div id="asunto" class="asunto" >
     
-      <input type="text" name='asunto' class="form-control" id="inputCity" placeholder="Asunto (requerido)" style="width: 300px" required>
+      <input type="text" name='asunto' class="form-control" id="form-asunto" placeholder="Asunto (requerido)" style="width: 300px" required>
     </div>
 </div>
 
 <div class="datos">
     <div >
     
-        <input type="text" name='nombre' class="form-control" id="inputCity" placeholder="Nombre (requerido)" required>
+        <input type="text" name='nombre' class="form-control" id="form-nombre" placeholder="Nombre (requerido)" required>
       </div>
       <div>
       
-          <input type="text" name='apellido'class="form-control" id="inputCity" placeholder="Apellido (requerido)" required>
+          <input type="text" name='apellido'class="form-control" id="form-apellido" placeholder="Apellido (requerido)" required>
         </div>
       
     <div>
     
-      <input type="email" name='correo'class="form-control" id="inputEmail4" placeholder="Email (requerido)" required>
+      <input type="email" name='correo'class="form-control" id="form-mail" placeholder="Email (requerido)" required>
     </div>
 
     <div >
@@ -100,21 +100,15 @@
 <div>
     <div class="comentarios" > 
       <div >
-        <textarea class="form-control" name='textarea' placeholder="Deje su comentario" id="floatingTextarea2"  style="height: 150px" required></textarea>         
+        <textarea class="form-control" name='textarea' placeholder="Deje su comentario" id="form-comentarios"  style="height: 150px" required></textarea>         
       </div>    
     </div>
 
 <div class="enviar">
    
      <div >
-      <button id="boton-contacto" type="submit" class=" btn-forms">Enviar consulta</button>
-      <script>
-        let miBoton = document.getElementById("boton-contacto");
-        miBoton.onclick = () => { 
-          Swal.fire('Consulta enviada con exito!!')
-        
-          };
-      </script>
+      <button id="boton-contacto" type="submit" >Enviar consulta</button>
+  
     </div>
   
 </div>
@@ -172,6 +166,8 @@
   <!-- toastify -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <!-- <script src="../contacto.js"></script> -->
+ 
+  <script src="../contacto.js"></script>
   <script src="../ajax.js"></script>
 
 </body>
